@@ -49,7 +49,7 @@ body {
   box-sizing: border-box;
 }
 
-.header button {
+.header .btn {
   font-family: 'Red Rose';
   background: var(--bg-grad);
   color: var(--text-light);
@@ -128,12 +128,13 @@ body {
 .wallets {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   padding: 10px 100px;
-  gap: 264px;
   background: var(--bg-grad);
   margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .inspire {
@@ -401,4 +402,98 @@ body {
 
 .new {
   margin-top: 10px;
+}
+
+
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1112px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  .nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+
+  .nav-mobile * {
+    display: block;
+    text-align: right;
+  }
+
+  .nav-mobile button {
+    border: none;
+    background: none;
+    margin-right: 0;
+    float: right;
+  }
+
+
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .search {
+    display: flex;
+
+  }
+
+  .wallets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 10px 100px;
+    background: var(--bg-grad);
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .wallets img {
+    width: 30%;
+  }
+
+  .nfts-left {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nfts-right {
+    display: none;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer>* {
+    display: inline-table;
+    margin-right: 40px;
+  }
+
+  .footer .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
