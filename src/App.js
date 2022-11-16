@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Wallets from './components/Wallets';
+import Inspire from './components/Inspire';
+import Nfts from './components/Nfts';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <Wallets />
+      <Inspire />
+      <Nfts />
+      <Footer />
     </div>
   );
 }
