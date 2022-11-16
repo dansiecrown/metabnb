@@ -7,6 +7,8 @@
 
 body {
   font-family: 'Red Rose', cursive;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -56,6 +58,10 @@ body {
   padding: 1em;
   font-weight: 400;
   font-size: 16px;
+}
+
+.header button:hover {
+  cursor: pointer;
 }
 
 .hero h1 {
@@ -259,4 +265,140 @@ body {
 
 .footer .social img {
   padding-right: 40px;
+}
+
+
+/* for stay page _____________________________________________ */
+
+.menu {
+  width: 86.1%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.menu nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu nav * {
+  margin: auto;
+}
+
+.menu nav a {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.menu-btn {
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #B4B4B4;
+  border-radius: 8px;
+}
+
+.menu-cards {
+  width: 86.1%;
+  margin: 50px auto;
+
+
+}
+
+
+/* Styles for the Modal _________________________ */
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 600px;
+  height: 326px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #CFD8DC;
+
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-header button {
+  border: none;
+  background: none;
+}
+
+.modal-header button:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px 40px;
+}
+
+.choose {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.meta .left {
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.meta p {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+
+.meta .left img {
+  width: 44px;
+  height: 44px;
+  margin: auto
+}
+
+.right-icon {
+  margin: auto;
+  margin-right: 0px;
+}
+
+.new {
+  margin-top: 10px;
 }

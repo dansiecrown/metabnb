@@ -1,21 +1,15 @@
 import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Wallets from './components/Wallets';
-import Inspire from './components/Inspire';
-import Nfts from './components/Nfts';
-import Footer from './components/Footer';
-
+import Home from './pages/Home';
+import Stay from './pages/Stay';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Wallets />
-      <Inspire />
-      <Nfts />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/stay' element={<Stay />} />
+      </Routes>
     </div>
   );
 }
