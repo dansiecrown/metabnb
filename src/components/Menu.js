@@ -4,6 +4,7 @@ export default function Menu() {
     return (
         <div className='menu'>
             <nav>
+
                 <a href="#">Restaurant</a>
                 <a href="#">Cottage</a>
                 <a href="#">Castle</a>
@@ -13,8 +14,10 @@ export default function Menu() {
                 <a href="#">Off-grid</a>
                 <a href="#">Farm</a>
                 <div className="menu-btn">
-                    <a href="#">Location</a>
-                    <img src="./assets/settings.png" alt="settings" />
+                    <div>
+                        <a href="#">Location</a>
+                        <img src="./assets/settings.png" alt="settings" />
+                    </div>
                 </div>
             </nav>
         </div>

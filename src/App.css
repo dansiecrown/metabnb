@@ -415,6 +415,10 @@ body {
     display: block;
   }
 
+  .header>.buttons {
+    display: none;
+  }
+
   .header .nav {
     display: none;
   }
@@ -496,4 +500,42 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .menu {
+    width: 86.1%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .menu nav {
+    display: block;
+    width: 100%;
+    margin: auto;
+    align-self: stretch;
+    margin-top: 40px;
+  }
+
+  .menu nav>a {
+    display: inline-table;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  .menu-btn {
+    display: inline-table;
+  }
+
+  .menu-btn div {
+    display: flex;
+  }
+
+
+  .footer {
+    box-sizing: border-box;
+  }
+
+  .menu-cards {
+    text-align: center;
+  }
+
 }

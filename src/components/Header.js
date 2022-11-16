@@ -35,6 +35,9 @@ export default function Header({ showToggle }) {
                         <Link className='nav-link' to={"/stay"}>Place to stay</Link>
                         <a className='nav-link' href="#">NFTs</a>
                         <a className='nav-link' href="#">Community</a>
+                        <div className="buttons">
+                            <button className="btn" onClick={() => showToggle()}>Connect Wallet</button>
+                        </div>
                     </nav> : null
             }
 
